@@ -16,7 +16,7 @@
 
 | LUX Field Name     | LUX Description                                                                                       | LUX Path                                                        | JSON Example |
 | -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
-| Type                             | Classification of the Human Made Object, e.g. "painting" or "fossil".                                            | classified\_as              |  ![Classification](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/classification.png) |
+| Type                             | Classification of the Human Made Object, e.g. "painting" or "fossil".                                            | classified\_as              |  ![Classification](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/classified-as.png) |
 
 ### Physicality (dimensions and materials)
 
@@ -48,7 +48,7 @@
 | Location of Encounter Event      | Location of encounter.                                                                                           | encountered\_by > took\_place\_at                                |  ![Encounter Location](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/encounter-location.png)          |
 | Encounter Event Type             | Classification of encounter.                                                                                     | encountered\_by > classified\_as                                 |           |
 | TimeSpan of Encounter Event      | Timespan of encounter.                                                                                           | encountered\_by > timespan                                       |  ![Encounter Timespan](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/encounter-timespan.png)           |
-| Statement about Encounter Event  | Statements about the Encounter.                                                                                  | encountered\_by > referred\_to\_by                               |  ![Encounter Statement](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/encounter-statement.png)           |
+| Statement about Encounter Event  | Statements about the Encounter.                                                                                  | encountered\_by > referred\_to\_by                               |          |
 
 
 ### Statement
