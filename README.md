@@ -1,2 +1,2 @@
-# documentation
-A repo for LUX modeling and mapping documentation.
+# LUX Modeling Documentation
+A repo for LUX modeling documentation.
