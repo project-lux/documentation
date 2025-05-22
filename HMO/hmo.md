@@ -1,3 +1,25 @@
+# Human Made Objects
+
+The class for physical objects that have some value in human society is HumanMadeObject. Even if the object is a shell (and thus natural) without any significant modifications, this class is still used as the modification is the instilling of value by society. 
+
+[Linked.art's HMO Model Documentation](https://linked.art/model/object/)
+
+
+
+## Table of Contents
+
+- [Names & Identifiers](#names-and-identifiers)
+- [Classification](#classification)
+- [Physicality](#physicality)
+- [Production](#production)
+- [Encounter](#encounter)
+- [Statement](#statement)
+- [Part Of](#part-of)
+- [Referenced Works](#referenced-works)
+- [Digital Images](#digital-images)
+- [Current Status](#current-status)
+
+
 
 ### Names and Identifiers
 
@@ -10,6 +32,7 @@
 | Identifier Type                  | Classification of identifiers.                                                                                   | identified\_ by > Identifier > classified\_as                    |   ![Identifier Classification](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/ident-classification.png)         |
 | Identifier Data Assignment       | Used to denote the assigner of the identifier, e.g. Yale Center for British Art assigned their accession number. | identified\_by > Identifier > assigned\_by > AttributeAssignment |  ![Identifier Assigned By](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/ident-assignedby.png)    |
 | Exact Match                      | On Human Made Objects, the equivalent property usually holds the record of internal unit's URI that contributes to the LUX record. It may also include a Wikidata URI, if this Object was reconciled to Wikidata.               | equivalent                                                       |   ![Equivalent](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/equivalent.png)           |
+| Internal Label                   | Human-readable label for object.                                                                                 | \_label                                                          |  ![Label](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/label.png)            |
 
 
 ### Classification
@@ -18,7 +41,7 @@
 | -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
 | Type                             | Classification of the Human Made Object, e.g. "painting" or "fossil".                                            | classified\_as              |  ![Classification](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/classified-as.png) |
 
-### Physicality (dimensions and materials)
+### Physicality
 
 | LUX Field Name     | LUX Description                                                                                       | LUX Path                                                        | JSON Example |
 | -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
@@ -69,12 +92,12 @@
 | Part of Object                   | Another, possibly larger object, that this object forms part of.                                                                      | part\_of                                                         |            |
 | Part of Set                      | Set this object is a member of.                                                                                  | member\_of                                                       | ![Member Of](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/member-of.png)           |
 
-### Works and Images Carried
+### Referenced Works
 
 | LUX Field Name     | LUX Description                                                                                       | LUX Path                                                        | JSON Example |
 | -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
 | Visual Image Shown               | Visual item the object shows. Objects from the Peabody will not have this property.                                                                                 | shows                                                            | ![Shows](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/shows.png)            |
-| Text Carried                     | Textual Work the Object carries. Objects from the Peabody will not have this property.                                                                                | carries                                                          |  ![Carries](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/carries.png)           |
+| Text Carried                     | Textual Work the object carries. Objects from the Peabody will not have this property.                                                                                | carries                                                          |  ![Carries](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/carries.png)           |
 
 ### Digital Images
 
@@ -87,15 +110,9 @@
 | Digital Reference Format         | Media type of digital object (e.g. "text/html").                                                                 | subject\_of > digitally\_carried\_by > format                    |  ![Digital Reference Format](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/digitalreference-format.png)           |
 | Digital Reference Access Point   | Website URL or URI of digital object.                                                                            | subject\_of > digitally\_carried\_by > access\_point             | ![Digital Reference Access Point](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/digitalreference-accesspoint.png)            |
 
-### Current Location & Ownership Information
+### Current Status
 
 | LUX Field Name     | LUX Description                                                                                       | LUX Path                                                        | JSON Example |
 | -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
 | Current Location                 | Current physical location.                                                                                       | current\_location                                                | ![Current Location](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/current-location.png)         |
 | Current Owner                    | Current owner of the object.                                                                                     | current\_owner                                                   |  ![Current Owner](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/current-owner.png)        |
-
-### Label
-
-| LUX Field Name     | LUX Description                                                                                       | LUX Path                                                        | JSON Example |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
-| Internal Label                   | Human-readable label for object.                                                                                 | \_label                                                          |  ![Label](https://raw.githubusercontent.com/project-lux/documentation/main/screenshots/HMO/label.png)            |
