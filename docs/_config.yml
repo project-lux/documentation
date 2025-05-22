@@ -1,5 +1,4 @@
 title: Project LUX Documentation
 description: Comprehensive data model documentation for LUX
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
 show_downloads: false
-google_analytics:
