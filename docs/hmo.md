@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../assets/css/custom.css">
+
 # Human Made Object
 
 The class for physical objects that have some value in human society is HumanMadeObject. Even if the object is a shell (and thus natural) without any significant modifications, this class is still used as the modification is the instilling of value by society. 

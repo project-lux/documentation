@@ -8,11 +8,3 @@ plugins:
 
 remote_theme: pages-themes/minimal
 
-# Add custom CSS
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
-      css: /assets/css/custom.css
-
