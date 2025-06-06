@@ -5,3 +5,9 @@ img {
   display: block;
   margin: 2em auto;
 }
+
+
+.md-typeset table {
+  margin-left: auto;
+  margin-right: auto;
+}
