@@ -2,3 +2,17 @@ title: Project LUX Documentation
 description: Comprehensive data model documentation for LUX
 theme: jekyll-theme-minimal
 show_downloads: false
+
+plugins:
+  - jekyll-remote-theme
+
+remote_theme: pages-themes/minimal
+
+# Add custom CSS
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      css: /assets/css/custom.css
+
