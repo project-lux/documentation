@@ -23,40 +23,67 @@ The class for physical objects that have some value in human society is HumanMad
 
 ### Names and Identifiers
 
-| LUX Field Name           | LUX Description                                                                                   | LUX Path                                     |
-|--------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------|
-| Name                     | The name for the Human Made Object. This field is often synonymous with title.                   | identified_by > Name > content               |
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Name | The name for the Human Made Object. This field is often synonymous with title. | identified_by > Name > content |
 
 ![Name Content](assets/HMO/name-content.png)
 
-| Name Type                | The classification of the name, e.g. "primary" or "sort".                                          | identified_by > Name > classified_as         |
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Name Type | The classification of the name, e.g. "primary" or "sort". | identified_by > Name > classified_as |
 
 ![Name Classification](assets/HMO/name-classification.png)
 
-| Name Language            | The language of the name, e.g. "English".                                                          | identified_by > Name > language              |
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Name Language | The language of the name, e.g. "English". | identified_by > Name > language |
 
 ![Name Language](assets/HMO/name-language.png)
 
-| Identifier               | Numerical identifiers for Human Made Object.                                                       | identified_by > Identifier > content         |
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Identifier  | Numerical identifiers for Human Made Object. | identified_by > Identifier > content |
 
 ![Identifier Content](assets/HMO/ident-content.png)
 
-| Identifier Type          | Classification of identifiers.                                                                     | identified_by > Identifier > classified_as   |
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Identifier Type | Classification of identifiers. | identified_by > Identifier > classified_as   |
 
 ![Identifier Classification](assets/HMO/ident-classification.png)
 
-| Identifier Data Assignment | Used to denote the assigner of the identifier.                                                   | identified_by > Identifier > assigned_by > AttributeAssignment |
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Identifier Data Assignment | Used to denote the assigner of the identifier.  | identified_by > Identifier > assigned_by > AttributeAssignment |
 
 ![Identifier Assigned By](assets/HMO/ident-assignedby.png)
 
-| Exact Match              | Holds internal URI or reconciled Wikidata URI.                                                     | equivalent                                   |
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Exact Match | Holds internal URI or reconciled Wikidata URI.  | equivalent |
 
 ![Equivalent](assets/HMO/equivalent.png)
 
-| Internal Label           | Human-readable label for object.                                                                   | _label                                       |
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Internal Label | Human-readable label for object. | _label |
 
 ![Label](assets/HMO/label.png)
-
 
 
 ### Classification
@@ -76,14 +103,26 @@ The class for physical objects that have some value in human society is HumanMad
 
 ![Dimension Value](assets/HMO/dimension-value.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Dimension Unit | Unit for the dimension, e.g. centimeters. | dimension > unit |
 
 ![Dimension Unit](assets/HMO/dimension-unit.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Dimension Type | Classification for the dimension, e.g. height. | dimension > classified_as |
 
 ![Dimension Classification](assets/HMO/dimension-classification.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Material | Material of the object. | made_of |
 
 ![Material](assets/HMO/made-of.png)
@@ -97,28 +136,56 @@ The class for physical objects that have some value in human society is HumanMad
 
 ![Production Carried Out By](assets/HMO/production-carriedoutby.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Location of Production Event | Location of production. | produced_by > took_place_at |
 
 ![Production Location](assets/HMO/production-location.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Production Event Technique | Technique of production. | produced_by > technique |
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Influence on Production Event | Entity influencing the production. | produced_by > influenced_by |
 
 ![Production Influence](assets/HMO/production-influence.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Production Event Type | Classification of the production. | produced_by > classified_as |
 
 ![Production Classification](assets/HMO/production-classification.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Production Event Part | Break production into parts. | produced_by > part |
 
 ![Production Part](assets/HMO/production-part.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | TimeSpan of Production Event | Timespan of production. | produced_by > timespan |
 
 ![Production TimeSpan](assets/HMO/production-timespan.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Statement about Production Event | Statements about the Production. | produced_by > referred_to_by |
 
 ![Production Statement](assets/HMO/production-statement.png)
@@ -131,16 +198,33 @@ The class for physical objects that have some value in human society is HumanMad
 
 ![Encounter Carried Out By](assets/HMO/encounter-carriedoutby.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Location of Encounter Event | Location of encounter. | encountered_by > took_place_at |
 
 ![Encounter Location](assets/HMO/encounter-location.png)
 
+---
+
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Encounter Event Type | Classification of encounter. | encountered_by > classified_as |
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | TimeSpan of Encounter Event | Timespan of encounter. | encountered_by > timespan |
 
 ![Encounter Timespan](assets/HMO/encounter-timespan.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Statement about Encounter Event | Statements about the Encounter. | encountered_by > referred_to_by |
 
 
@@ -152,16 +236,32 @@ The class for physical objects that have some value in human society is HumanMad
 
 ![Statement Content](assets/HMO/statement-content.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Statement Type | Classification of the statement about the Human Made Object, e.g. "provenance statement". | referred_to_by > classified_as |
 
 ![Statement Classification](assets/HMO/statement-classification.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Statement Type Metatype | Note classification metatype. | referred_to_by > classified_as > classified_as |
 
 ![Statement Classification Metatype](assets/HMO/statement-classificationmetatype.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Statement Language | Language of statement. | referred_to_by > language |
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Name for Statement | Label override for statements in UI. | referred_to_by > identified_by |
 
 ![Statement Name](assets/HMO/statement-name.png)
@@ -173,6 +273,10 @@ The class for physical objects that have some value in human society is HumanMad
 | -------------- | --------------- | -------- |
 | Part of Object | Another, possibly larger object, that this object forms part of. | part_of |
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Part of Set | Set this object is a member of. | member_of |
 
 ![Member Of](assets/HMO/member-of.png)
@@ -186,6 +290,10 @@ The class for physical objects that have some value in human society is HumanMad
 
 ![Shows](assets/HMO/shows.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Text Carried | Textual Work the object carries. Objects from the Peabody will not have this property. | carries |
 
 ![Carries](assets/HMO/carries.png)
@@ -199,22 +307,42 @@ The class for physical objects that have some value in human society is HumanMad
 
 ![Representation](assets/HMO/representation.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Digital Reference | Webpages and IIIF manifests. | subject_of > digitally_carried_by |
 
 ![Digital Reference](assets/HMO/digitalreference.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Digital Reference Type | Classification of digital reference. | subject_of > digitally_carried_by > classified_as |
 
 ![Digital Reference Classification](assets/HMO/digitalreference-classification.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Name for Digital Reference | Label for the digital reference. | subject_of > digitally_carried_by > identified_by |
 
 ![Digital Reference Name](assets/HMO/digitalreference-name.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Digital Reference Format | Media type of digital object (e.g. "text/html"). | subject_of > digitally_carried_by > format |
 
 ![Digital Reference Format](assets/HMO/digitalreference-format.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Digital Reference Access Point | Website URL or URI of digital object. | subject_of > digitally_carried_by > access_point |
 
 ![Digital Reference Access Point](assets/HMO/digitalreference-accesspoint.png)
@@ -228,6 +356,10 @@ The class for physical objects that have some value in human society is HumanMad
 
 ![Current Location](assets/HMO/current-location.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Current Owner | Current owner of the object. | current_owner |
 
 ![Current Owner](assets/HMO/current-owner.png)
