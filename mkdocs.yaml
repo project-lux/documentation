@@ -1,4 +1,6 @@
 site_name: Project LUX Documentation
+site_url: https://project-lux.github.io/documentation/
+
 theme:
   name: material
 
@@ -6,6 +8,10 @@ nav:
   - Home: index.md
   - Human Made Object: HumanMadeObject.md
 
+# Optional: Make URLs cleaner
+use_directory_urls: true
+
+# Markdown features
 markdown_extensions:
   - admonition
   - toc:
