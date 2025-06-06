@@ -23,5 +23,10 @@ jobs:
           pip install mkdocs-material
 
       - name: Deploy with MkDocs
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          mkdocs gh-deploy --force
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          mkdocs gh-deploy --force --remote-name origin --remote-branch gh-pages
+
