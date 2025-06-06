@@ -6,7 +6,7 @@ theme:
 
 nav:
   - Home: index.md
-  - Human Made Object: HumanMadeObject.md
+  - Human Made Object: hmo.md
 
 # Optional: Make URLs cleaner
 use_directory_urls: true
