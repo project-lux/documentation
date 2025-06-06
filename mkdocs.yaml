@@ -1,0 +1,14 @@
+site_name: Project LUX Documentation
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Human Made Object: HumanMadeObject.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - attr_list
