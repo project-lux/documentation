@@ -1,13 +1,28 @@
+/* Centered, full-width images */
 img {
-  width: 1000px;
-  max-width: 100%;
-  height: auto;
   display: block;
   margin: 2em auto;
+  width: auto;
+  width: 800px;
+  height: auto;
 }
 
-
+/* Centered, consistent-width tables */
 .md-typeset table {
-  margin-left: auto;
-  margin-right: auto;
+  width: 800px;
+  table-layout: fixed;
+  margin: 2em auto;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+/* Table header and cell styling */
+.md-typeset th,
+.md-typeset td {
+  width: 33%;
+  padding: 0.6em 0.8em;
+  font-size: 0.9rem;
+  text-align: left;
+  border: 1px solid #ccc;
+  word-wrap: break-word;
 }

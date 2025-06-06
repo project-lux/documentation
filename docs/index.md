@@ -5,6 +5,8 @@ Welcome to the LUX documentation site.
 ## Available Documentation
 
 * [Human Made Object](hmo.md)
+* [Group](group.md)
+
 
 ---
 
