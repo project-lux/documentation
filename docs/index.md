@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../assets/css/custom.css">
-
 # LUX Documentation Index
 
 Welcome to the LUX documentation site.
