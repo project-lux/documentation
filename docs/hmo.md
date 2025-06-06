@@ -24,7 +24,7 @@ The class for physical objects that have some value in human society is HumanMad
 ### Names and Identifiers
 
 | LUX Field Name     | LUX Description                                                                                       | LUX Path                                                        | JSON Example |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | Name                             | The name for the Human Made Object. This field is often synonymous with title.                                   | identified\_by > Name > content                                  |  
 ![Name Content](assets/HMO/name-content.png)
 
@@ -53,7 +53,7 @@ The class for physical objects that have some value in human society is HumanMad
 ### Classification
 
 | LUX Field Name     | LUX Description                                                                                       | LUX Path                                                        | JSON Example |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | 
 | Type                             | Classification of the Human Made Object, e.g. "painting" or "fossil".                                            | classified\_as              |  
 ![Classification](assets/HMO/classified-as.png) 
 
@@ -61,7 +61,7 @@ The class for physical objects that have some value in human society is HumanMad
 ### Physicality
 
 | LUX Field Name     | LUX Description                                                                                       | LUX Path                                                        | JSON Example |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | 
 | Dimension Value                  | Numerical value of the dimension.                                                                                | dimension > value                                                | 
 ![Dimension Value](assets/HMO/dimension-value.png)  
 
@@ -81,7 +81,7 @@ The class for physical objects that have some value in human society is HumanMad
 ### Production
 
 | LUX Field Name     | LUX Description                                                                                       | LUX Path                                                        | JSON Example |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | 
 | Creator in Production Event      | Producer of the object, e.g. artist, maker.                                                                      | produced\_by > carried\_out\_by                                  |  
 ![Production Carried Out By](assets/HMO/production-carriedoutby.png)
 
@@ -114,7 +114,7 @@ The class for physical objects that have some value in human society is HumanMad
 ### Encounter
 
 | LUX Field Name     | LUX Description                                                                                       | LUX Path                                                        | JSON Example |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | 
 | Agent in Encounter Event       | Person or Group who encountered the object.                                                                      | encountered\_by > carried\_out\_by                               |  
 ![Encounter Carried Out By](assets/HMO/encounter-carriedoutby.png)
 
@@ -133,7 +133,7 @@ The class for physical objects that have some value in human society is HumanMad
 ### Statement
 
 | LUX Field Name     | LUX Description                                                                                       | LUX Path                                                        | JSON Example |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | Statement                        | Statements about the Human Made Object.                                                                          | referred\_to\_by > content                                       | 
 ![Statement Content](assets/HMO/statement-content.png)
 
@@ -154,7 +154,7 @@ The class for physical objects that have some value in human society is HumanMad
 ### Part Of
 
 | LUX Field Name     | LUX Description                                                                                       | LUX Path                                                        | JSON Example |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | Part of Object                   | Another, possibly larger object, that this object forms part of.                                                                      | part\_of                                                         |  
 
 | Part of Set                      | Set this object is a member of.                                                                                  | member\_of                                                       | 
@@ -164,7 +164,7 @@ The class for physical objects that have some value in human society is HumanMad
 ### Referenced Works
 
 | LUX Field Name     | LUX Description                                                                                       | LUX Path                                                        | JSON Example |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | Visual Image Shown               | Visual item the object shows. Objects from the Peabody will not have this property.                                                                                 | shows                                                            | 
 ![Shows](assets/HMO/shows.png) 
 
@@ -175,7 +175,7 @@ The class for physical objects that have some value in human society is HumanMad
 ### Digital Images
 
 | LUX Field Name     | LUX Description                                                                                       | LUX Path                                                        | JSON Example |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | 
 | Depicting Image                  | Thumbnail representation of the image.                                                                           | representation                                                   |   
 ![Representation](assets/HMO/representation.png) 
 
@@ -199,7 +199,7 @@ The class for physical objects that have some value in human society is HumanMad
 ### Current Status
 
 | LUX Field Name     | LUX Description                                                                                       | LUX Path                                                        | JSON Example |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------- |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | 
 | Current Location                 | Current physical location.                                                                                       | current\_location                                                | 
 ![Current Location](assets/HMO/current-location.png) 
 
