@@ -79,7 +79,7 @@ All activities are carried out by some actor, either a person (Person) or a grou
 | Type | Classification of the Person, e.g. "architect". | classified_as |
 
 **JSON Example**
-![Classification](assets/Person/classified_as.png)
+![Classification](assets/Person/classified-as.png)
 
 ---
 
@@ -116,7 +116,7 @@ All activities are carried out by some actor, either a person (Person) or a grou
 | Contact Point | If a source provides us with an address or email for the Person, it will be recorded here.  | contact_point |
 
 **JSON Example**
-![Contact Point](assets/Person/contact-point.png)
+example pending
 
 ---
 
@@ -125,7 +125,7 @@ All activities are carried out by some actor, either a person (Person) or a grou
 | Contact Point Classification | Classification of contact point, e.g. "email". | contact_point > classified_as |
 
 **JSON Example**
-![Contact Point Classification](assets/Person/contact-point-classification.png)
+example pending
 
 
 ### Birth
@@ -183,7 +183,7 @@ All activities are carried out by some actor, either a person (Person) or a grou
 | Professional Activity Classification | Classification for professional activity of Person. | carried_out > timespan|
 
 **JSON Example**
-example pending
+![Professional Activity Classification](assets/Person/professional-activity-classification.png)
 
 ---
 
@@ -192,8 +192,7 @@ example pending
 | Professional Activity Timespan | Timespan for professional activity of Person. | carried_out > timespan|
 
 **JSON Example**
-![Professional Activity Timespan](assets/Person/professional-activity-timespan.png)
-
+example pending
 
 ### Statement
 
