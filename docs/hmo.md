@@ -163,7 +163,7 @@ The class for physical objects that have some value in human society is HumanMad
 | Production Event Technique | Technique of production. | produced_by > technique |
 
 **JSON Example**
-does not exist in current data
+example pending
 ---
 
 | LUX Field Name | LUX Description | LUX Path |
@@ -235,7 +235,7 @@ does not exist in current data
 | Encounter Event Type | Classification of encounter. | encountered_by > classified_as |
 
 **JSON Example**
-does not exist in current data
+example pending
 
 ---
 
@@ -253,7 +253,7 @@ does not exist in current data
 | Statement about Encounter Event | Statements about the Encounter. | encountered_by > referred_to_by |
 
 **JSON Example**
-does not exist in current data
+example pending
 
 ### Statement
 
@@ -289,7 +289,7 @@ does not exist in current data
 | Statement Language | Language of statement. | referred_to_by > language |
 
 **JSON Example**
-does not exist in current data
+example pending
 
 ---
 
@@ -308,7 +308,7 @@ does not exist in current data
 | Part of Object | Another, possibly larger object, that this object forms part of. | part_of |
 
 **JSON Example**
-does not exist in current data
+example pending
 
 ---
 
