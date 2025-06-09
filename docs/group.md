@@ -70,7 +70,7 @@ All activities are carried out by some actor, either a person (Person) or a grou
 | Type | Classification of the Group, e.g. "corporation". | classified_as |
 
 **JSON Example**
-![Classification](assets/Group/classified-as.png)
+![Classification](assets/Group/classified_as.png)
 
 ---
 
@@ -116,7 +116,7 @@ All activities are carried out by some actor, either a person (Person) or a grou
 | Residence | Location of Group. | residence|
 
 **JSON Example**
-![Location](assets/Group/location.png)
+![Residence](assets/Group/residence.png)
 
 ### Formation
 
@@ -134,7 +134,7 @@ All activities are carried out by some actor, either a person (Person) or a grou
 | Formation Location | Location where Group was formed. | formed_by > took_place_at|
 
 **JSON Example**
-![Formed By Took Place At](assets/Group/formation-location.png)
+example pending
 
 ---
 
@@ -153,7 +153,7 @@ All activities are carried out by some actor, either a person (Person) or a grou
 | Dissolution Location | Location where Group was dissolved. | dissolved_by > took_place_at|
 
 **JSON Example**
-![Dissolved By Took Place At](assets/Group/dissolved-by-took-place-at.png)
+example pending
 
 ---
 
@@ -162,7 +162,7 @@ All activities are carried out by some actor, either a person (Person) or a grou
 | Dissolution Timespan | Timespan for dissolution of Group. | dissolved_by > timespan|
 
 **JSON Example**
-![Dissolved By Timespan](assets/Group/dissolved-by-timespan.png)
+![Dissolution Timespan](assets/Group/dissolution-timespan.png)
 
 ### Professional Activity
 
@@ -256,7 +256,7 @@ All activities are carried out by some actor, either a person (Person) or a grou
 | Name for Digital Reference | Label for the digital reference. | subject_of > digitally_carried_by > identified_by |
 
 **JSON Example**
-does not exist in current data
+example pending
 
 ---
 
@@ -265,7 +265,7 @@ does not exist in current data
 | Digital Reference Format | Media type of digital object (e.g. "text/html"). | subject_of > digitally_carried_by > format |
 
 **JSON Example**
-does not exist in current data
+example pending
 
 ---
 
