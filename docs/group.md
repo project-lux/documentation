@@ -125,7 +125,7 @@ All activities are carried out by some actor, either a person (Person) or a grou
 | Formation Actor | Person or Persons who formed the Group. | formed_by > carried_out_by|
 
 **JSON Example**
-![Formed By Carried Out By](assets/Group/formed-by-carried-out-by.png)
+![Formed By Carried Out By](assets/Group/formation-actor.png)
 
 ---
 
@@ -172,7 +172,7 @@ All activities are carried out by some actor, either a person (Person) or a grou
 | Professional Activity Location | Location where Group was professionally active. | carried_out > took_place_at|
 
 **JSON Example**
-![Professional Activity Took Place At](assets/Group/professional-activity-took-place-at.png)
+![Professional Activity Took Place At](assets/Group/professional-activity-location.png)
 
 ---
 
