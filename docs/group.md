@@ -8,6 +8,10 @@ All activities are carried out by some actor, either a person (Person) or a grou
 - [Names & Identifiers](#names-and-identifiers)
 - [Classification](#classification)
 - [Contact Point](#contact-point)
+- [Residence](#residence)
+- [Formation](#formation)
+- [Dissolution](#dissolution)
+- [Professional Activity](#professional-activity)
 - [Statement](#statement)
 - [Member Of](#member-of)
 
@@ -105,6 +109,81 @@ All activities are carried out by some actor, either a person (Person) or a grou
 **JSON Example**
 ![Contact Point Classification](assets/Group/contact-point-classification.png)
 
+### Residence
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Residence | Location of Group. | residence|
+
+**JSON Example**
+![Location](assets/Group/location.png)
+
+### Formation
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Formation Actor | Person or Persons who formed the Group. | formed_by > carried_out_by|
+
+**JSON Example**
+![Formed By Carried Out By](assets/Group/formed-by-carried-out-by.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Formation Location | Location where Group was formed. | formed_by > took_place_at|
+
+**JSON Example**
+![Formed By Took Place At](assets/Group/formation-location.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Formation Timespan | Timespan for formation of Group. | formed_by > timespan|
+
+**JSON Example**
+![Formed By Timespan](assets/Group/formation-timespan.png)
+
+
+### Dissolution
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Dissolution Location | Location where Group was dissolved. | dissolved_by > took_place_at|
+
+**JSON Example**
+![Dissolved By Took Place At](assets/Group/dissolved-by-took-place-at.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Dissolution Timespan | Timespan for dissolution of Group. | dissolved_by > timespan|
+
+**JSON Example**
+![Dissolved By Timespan](assets/Group/dissolved-by-timespan.png)
+
+### Professional Activity
+
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Professional Activity Location | Location where Group was professionally active. | carried_out > took_place_at|
+
+**JSON Example**
+![Professional Activity Took Place At](assets/Group/professional-activity-took-place-at.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Professional Activity Timespan | Timespan for professional activity of Group. | carried_out > timespan|
+
+**JSON Example**
+![Professional Activity Timespan](assets/Group/professional-activity-timespan.png)
+
+
 ### Statement
 
 | LUX Field Name | LUX Description | LUX Path |
@@ -132,14 +211,6 @@ All activities are carried out by some actor, either a person (Person) or a grou
 **JSON Example**
 ![Statement Language](assets/Group/statement-language.png)
 
----
-
-| LUX Field Name | LUX Description | LUX Path |
-| -------------- | --------------- | -------- |
-| Name for Statement | Label override for statements in UI. | referred_to_by > identified_by |
-
-**JSON Example**
-![Statement Name](assets/Group/statement-name.png)
 
 ### Member Of
 
@@ -149,6 +220,61 @@ All activities are carried out by some actor, either a person (Person) or a grou
 
 **JSON Example**
 ![Member Of](assets/Group/member-of.png)
+
+
+### Digital Images
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Depicting Image | Used to store data for images. Images for People come from Wikimedia. | representation |
+
+**JSON Example**
+![Representation](assets/Group/representation.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Digital Reference | Webpages and IIIF manifests. | subject_of > digitally_carried_by |
+
+**JSON Example**
+![Digital Reference](assets/Group/digitalreference.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Digital Reference Type | Classification of digital reference. | subject_of > digitally_carried_by > classified_as |
+
+**JSON Example**
+![Digital Reference Classification](assets/Group/digitalreference-classification.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Name for Digital Reference | Label for the digital reference. | subject_of > digitally_carried_by > identified_by |
+
+**JSON Example**
+![Digital Reference Name](assets/Group/digitalreference-name.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Digital Reference Format | Media type of digital object (e.g. "text/html"). | subject_of > digitally_carried_by > format |
+
+**JSON Example**
+![Digital Reference Format](assets/Group/digitalreference-format.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Digital Reference Access Point | Website URL or URI of digital object. | subject_of > digitally_carried_by > access_point |
+
+**JSON Example**
+![Digital Reference Access Point](assets/Group/digitalreference-accesspoint.png)
 
 
 
