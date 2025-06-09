@@ -8,6 +8,7 @@ nav:
   - Home: index.md
   - Human Made Object: hmo.md
   - Group: group.md
+  - Person: person.md
 
 # Optional: Make URLs cleaner
 use_directory_urls: true

@@ -6,7 +6,7 @@ Welcome to the LUX documentation site.
 
 * [Human Made Object](hmo.md)
 * [Group](group.md)
-
+* [Person](person.md)
 
 ---
 
