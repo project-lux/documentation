@@ -256,7 +256,7 @@ All activities are carried out by some actor, either a person (Person) or a grou
 | Name for Digital Reference | Label for the digital reference. | subject_of > digitally_carried_by > identified_by |
 
 **JSON Example**
-![Digital Reference Name](assets/Group/digitalreference-name.png)
+does not exist in current data
 
 ---
 
@@ -265,7 +265,7 @@ All activities are carried out by some actor, either a person (Person) or a grou
 | Digital Reference Format | Media type of digital object (e.g. "text/html"). | subject_of > digitally_carried_by > format |
 
 **JSON Example**
-![Digital Reference Format](assets/Group/digitalreference-format.png)
+does not exist in current data
 
 ---
 
