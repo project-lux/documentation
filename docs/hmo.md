@@ -58,7 +58,7 @@ The class for physical objects that have some value in human society is HumanMad
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Identifier Type | Classification of identifiers. | identified_by > Identifier > classified_as   |
+| Identifier Type | Classification of numerical identifiers. | identified_by > Identifier > classified_as   |
 
 **JSON Example**
 ![Identifier Classification](assets/HMO/ident-classification.png)
