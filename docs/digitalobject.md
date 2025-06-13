@@ -9,7 +9,7 @@ Digital objects are generally treated in the same way as physical objects -- the
 
 - [Names & Identifiers](#names-and-identifiers)
 - [Classification](#classification)
-- [Creation](#creation)
+- [Creation](#creation) 
 - [Statement](#statement)
 - [Part Of](#part-of)
 - [Referenced Works](#referenced-works)
@@ -42,7 +42,7 @@ Digital objects are generally treated in the same way as physical objects -- the
 | Name Language | The language of the name, e.g. "English". | identified_by > Name > language |
 
 **JSON Example**
-![Name Language](assets/DO/name-language.png)
+example pending
 
 ---
 
@@ -66,7 +66,7 @@ Digital objects are generally treated in the same way as physical objects -- the
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Identifier Data Assignment | Used to denote the assigner of the identifier.  | identified_by > Identifier > assigned_by > AttributeAssignment |
+| Identifier Data Assignment | Used to denote the assigner of the identifier. For archives, this is accompanied by motivated_by to assign Digital Objects to their archival sets.  | identified_by > Identifier > assigned_by > AttributeAssignment |
 
 **JSON Example**
 ![Identifier Assigned By](assets/DO/ident-assignedby.png)
@@ -104,7 +104,7 @@ Digital objects are generally treated in the same way as physical objects -- the
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Creator in Production Event | Creation of the Digital Object. | created_by > carried_out_by |
+| Creator in Production Event | Creator of the Digital Object. Could be nested in `part`. | created_by > carried_out_by |
 
 **JSON Example**
 ![Creation Carried Out By](assets/DO/creation-carriedoutby.png)
@@ -116,7 +116,7 @@ Digital objects are generally treated in the same way as physical objects -- the
 | Location of Creation Event | Location of creation. | created_by > took_place_at |
 
 **JSON Example**
-![Creation Location](assets/DO/creation-location.png)
+example pending
 
 
 ---
@@ -126,7 +126,7 @@ Digital objects are generally treated in the same way as physical objects -- the
 | Creation Event Type | Classification of the creation. | created_by > classified_as |
 
 **JSON Example**
-![Creation Classification](assets/DO/creation-classification.png)
+example pending
 
 ---
 
@@ -144,8 +144,7 @@ Digital objects are generally treated in the same way as physical objects -- the
 | Statement about Creation Event | Statements about the Creation. | created_by > referred_to_by |
 
 **JSON Example**
-![Creation Statement](assets/DO/creation-statement.png)
-
+example pending
 
 ### Statement
 
@@ -181,7 +180,7 @@ example pending
 | Name for Statement | Label override for statements in UI. | referred_to_by > identified_by |
 
 **JSON Example**
-![Statement Name](assets/DO/statement-name.png)
+example pending
 
 
 ### Part Of
@@ -207,7 +206,7 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Visual Image Shown | Visual item the Digital Object shows. | shows |
+| Visual Image Shown | Visual item the Digital Object shows. | digitally_shows |
 
 **JSON Example**
 ![Shows](assets/DO/shows.png)
@@ -216,7 +215,7 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Text Carried | Textual Work the Digital Object carries. | carries |
+| Text Carried | Textual Work the Digital Object carries. | digitally_carries |
 
 **JSON Example**
 ![Carries](assets/DO/carries.png)
