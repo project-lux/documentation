@@ -279,7 +279,7 @@ example pending
 | Subject To | Used to hold rights information on the Textual Work.| subject_to |
 
 **JSON Example**
-![Subject To](assets/Textual/subject-to.png)
+example pending
 
 ---
 
@@ -288,16 +288,16 @@ example pending
 | Subject To Classification| The classification of the rights information. In LUX, the id property of this array is used to hold a link to the, e.g. rightsstatements URL. | subject_to > classified_as |
 
 **JSON Example**
-![Subject To Classification](assets/Textual/subject-to-classification.png)
+example pending
 
+---
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
 | Subject To Name| The name of the rights information that appears as a label for the URL in the UI, e.g. "In Copyright". | subject_to > identified_by|
 
 **JSON Example**
-![Subject To Name](assets/Textual/subject-to-name.png)
-
+example pending
 
 ### Digital Images
 
@@ -306,7 +306,7 @@ example pending
 | Depicting Image | For LUX, this is only used on Textual Works if there is not already a IIIF manifest (which is stored in the subject_of property). You will find representation most often on subject heading records vended by the Library that are Works and are reconciled to Wikidata. LUX pipeline will add Wikimedia images to these via this property.| representation |
 
 **JSON Example**
-![Representation](assets/Textual/representation.png)
+example pending 
 
 ---
 
