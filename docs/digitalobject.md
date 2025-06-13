@@ -209,7 +209,7 @@ example pending
 | Visual Image Shown | Visual item the Digital Object shows. | digitally_shows |
 
 **JSON Example**
-![Shows](assets/DO/shows.png)
+example pending
 
 ---
 
