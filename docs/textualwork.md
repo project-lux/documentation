@@ -1,10 +1,8 @@
-# Visual Work
+# Textual Work
 
-Every human-made object with an intent to look a certain way is the carrier of a visual work, and could be a primarily two dimensional artwork such as a painting, a three dimensional artwork such as a statue, or a crafted three dimensional object such as armor, a plate, or a building.
+This section documents the model for documents that contain text, including artworks such as medieval manuscripts, archival material such as letters, ledgers or diaries, scholarly communication such as journals, articles and monographs, digital objects such as web pages, or any other sort of written communication.
 
-This visual work is modeled as a VisualItem resource, associated with the HumanMadeObject instances via the shows property. The VisualItem then has various properties described below that are used to describe the different facets.
-
-[Linked.art's Visual Work Model Documentation](https://linked.art/model/object/aboutness/)
+[Linked.art's Textual Work Model Documentation](https://linked.art/model/document/)
 
 
 - [Names & Identifiers](#names-and-identifiers)
@@ -23,10 +21,10 @@ This visual work is modeled as a VisualItem resource, associated with the HumanM
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Name | The name for the Visual Work, usually the same as the name for the Human Made Object. | identified_by > Name > content |
+| Name | Used to document the name of the Textual Work, usually the same as the Human Made Object. | identified_by > Name > content |
 
 **JSON Example**
-![Name Content](assets/Visual/name-content.png)
+![Name Content](assets/Textual/name-content.png)
 
 ---
 
@@ -35,7 +33,7 @@ This visual work is modeled as a VisualItem resource, associated with the HumanM
 | Name Type | The classification of the name, e.g. "primary" or "sort". | identified_by > Name > classified_as |
 
 **JSON Example**
-![Name Classification](assets/Visual/name-classification.png)
+![Name Classification](assets/Textual/name-classification.png)
 
 ---
 
@@ -46,15 +44,41 @@ This visual work is modeled as a VisualItem resource, associated with the HumanM
 **JSON Example**
 example pending
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Identifier  | Numerical identifiers for the Textual Work, e.g. the ILS YUL number. | identified_by > Identifier > content |
+
+**JSON Example**
+![Identifier Content](assets/Textual/ident-content.png)
 
 ---
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Exact Match | On Visual Works, the equivalent property usually only holds the record of internal unit's URI that contributes to the LUX record.  | equivalent |
+| Identifier Type | Classification of numerical identifiers. | identified_by > Identifier > classified_as   |
 
 **JSON Example**
-![Equivalent](assets/Visual/equivalent.png)
+![Identifier Classification](assets/Textual/ident-classification.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Identifier Data Assignment | Used to denote the assigner of the identifier.  | identified_by > Identifier > assigned_by > AttributeAssignment |
+
+**JSON Example**
+![Identifier Assigned By](assets/Textual/ident-assignedby.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Exact Match | On Textual Works, the equivalent property usually holds the record of internal unit's URI that contributes to the LUX record. It may also include a Wikidata URI, if this Textual Work was reconciled to Wikidata. | equivalent |
+
+**JSON Example**
+![Equivalent](assets/Textual/equivalent.png)
 
 ---
 
@@ -63,27 +87,27 @@ example pending
 | Internal Label | Human-readable label for work. | _label |
 
 **JSON Example**
-![Label](assets/Visual/label.png)
+![Label](assets/Textual/label.png)
 
 
 ### Classification
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Type | Classification for Visual Work, e.g. "landscape". | classified_as |
+| Type | Classification of the Textual Work, e.g. "poetry"| classified_as |
 
 **JSON Example**
-![Classification](assets/Visual/classified-as.png)
+![Classification](assets/Textual/classified-as.png)
 
 
 ### Creation
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Creator in Creation Event | Creator of Visual Work. Often, but not always, the same as the producer of the Human Made Object. May be nested in `part`. | created_by > carried_out_by |
+| Creator in Creation Event | Creator of Textual Work. Often, but not always, the same as the production location of the Human Made Object. | created_by > carried_out_by |
 
 **JSON Example**
-![Creation Carried Out By](assets/Visual/creation-carriedoutby.png)
+![Creation Carried Out By](assets/Textual/creation-carriedoutby.png)
 
 ---
 
@@ -92,7 +116,7 @@ example pending
 | Location of Creation Event | Location of creation. Often, but not always, the same as the production location of the Human Made Object. | created_by > took_place_at |
 
 **JSON Example**
-![Creation Location](assets/Visual/creation-location.png)
+example pending
 
 ---
 
@@ -101,7 +125,7 @@ example pending
 | Creation Event Type | Classification of the creation. | created_by > classified_as |
 
 **JSON Example**
-![Creation Classification](assets/Visual/creation-classification.png)
+![Creation Classification](assets/Textual/creation-classification.png)
 
 ---
 
@@ -121,12 +145,20 @@ example pending
 **JSON Example**
 example pending
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Cause of Creation Event | If an Activity with a separate record and URI is the cause of a Work's creation, this is where you can document that relationship. | created_by > caused_by |
+
+**JSON Example**
+![Creation Caused By](assets/Textual/creation-causedby.png)
 
 ### Publication
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Actor in Publishing Activity | Publisher of Visual Work. | used_for > carried_out_by |
+| Actor in Publishing Activity | Publisher of Textual Work. | used_for > carried_out_by |
 
 **JSON Example**
 example pending
@@ -138,7 +170,7 @@ example pending
 | Location of Publication | Location of publication. | used_for > took_place_at |
 
 **JSON Example**
-![Publication Location](assets/Visual/publication-location.png)
+![Publication Location](assets/Textual/publication-location.png)
 
 ---
 
@@ -147,7 +179,7 @@ example pending
 | Publication Type | Classification of the publication, usually "publishing". | used_for > classified_as |
 
 **JSON Example**
-![Publication Classification](assets/Visual/publication-classification.png)
+![Publication Classification](assets/Textual/publication-classification.png)
 
 ---
 
@@ -156,7 +188,7 @@ example pending
 | TimeSpan of Publication | Timespan of publication. | used_for > timespan |
 
 **JSON Example**
-example pending
+![Publication Timespan](assets/Textual/publication-timespan.png)
 
 ---
 
@@ -171,19 +203,19 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Statement | Statement about the Visual Work. | referred_to_by > content |
+| Statement | Statements about the Textual Work. | referred_to_by > content |
 
 **JSON Example**
-![Statement Content](assets/Visual/statement-content.png)
+![Statement Content](assets/Textual/statement-content.png)
 
 ---
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Statement Type | Classification of the statement. | referred_to_by > classified_as |
+| Statement Type | Classification of the statement, e.g. "edition statement". | referred_to_by > classified_as |
 
 **JSON Example**
-![Statement Classification](assets/Visual/statement-classification.png)
+![Statement Classification](assets/Textual/statement-classification.png)
 
 ---
 
@@ -201,14 +233,14 @@ example pending
 | Name for Statement | In LUX, units can leverage this field to push a specific label for statements on a Work. For example, if the classification label is not your preferred label, you can use a string label in the content of the statement name and the front end will display this as the statement label. | referred_to_by > identified_by |
 
 **JSON Example**
-![Statement Name](assets/Visual/statement-name.png)
+![Statement Name](assets/Textual/statement-name.png)
 
 
 ### Part Of
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Part of Work | This does not currently exist in LUX data, but may in the future. Potential use case: A record for a Visual Work that is a part of a larger Visual Work. | part_of |
+| Part of Work | Used to link the documented Textual Work to the overall Textual Work it is a part of. | part_of |
 
 **JSON Example**
 example pending
@@ -217,7 +249,7 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Part of Set | This does not currently exist in LUX data, but may in the future. Two potential use cases: If users add Visual Works to their My Collection; if units have Set information about their Visual Works | member_of |
+| Part of Set | This does not currently exist in LUX data, but may in the future. Potential use cases: If users add Textual Works to their My Collection; if units have Set information about their Textual Works | member_of |
 
 **JSON Example**
 example pending
@@ -226,28 +258,28 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| About | Used to link the Visual Work to any entity of any Class that it is about, e.g. themes or things not explictly depicted in the image. For things depicted in the image itself, use represents. | about |
+| About | Used to link the Textual Work to any entity of any Class that it is about, e.g. themes or topics. | about |
 
 **JSON Example**
-![About](assets/Visual/about.png)
+![About](assets/Textual/about.png)
 
 ---
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Represents| Used to link the Visual Work to any entity it represents, and which can be identified in the image. For themes or things not visible in the image itself, use about. | represents |
+| Language| Language of the documented Textual Work, if known. | language |
 
 **JSON Example**
-![Represents](assets/Visual/represents.png)
+![Language](assets/Textual/language.png)
 
 ### Rights
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Subject To | Used to hold rights information on the Visual Work.| subject_to |
+| Subject To | Used to hold rights information on the Textual Work.| subject_to |
 
 **JSON Example**
-![Subject To](assets/Visual/subject-to.png)
+![Subject To](assets/Textual/subject-to.png)
 
 ---
 
@@ -256,7 +288,7 @@ example pending
 | Subject To Classification| The classification of the rights information. In LUX, the id property of this array is used to hold a link to the, e.g. rightsstatements URL. | subject_to > classified_as |
 
 **JSON Example**
-![Subject To Classification](assets/Visual/subject-to-classification.png)
+![Subject To Classification](assets/Textual/subject-to-classification.png)
 
 
 | LUX Field Name | LUX Description | LUX Path |
@@ -264,17 +296,17 @@ example pending
 | Subject To Name| The name of the rights information that appears as a label for the URL in the UI, e.g. "In Copyright". | subject_to > identified_by|
 
 **JSON Example**
-![Subject To Name](assets/Visual/subject-to-name.png)
+![Subject To Name](assets/Textual/subject-to-name.png)
 
 
 ### Digital Images
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Depicting Image | Thumbnail representation of the image. | representation |
+| Depicting Image | For LUX, this is only used on Textual Works if there is not already a IIIF manifest (which is stored in the subject_of property). You will find representation most often on subject heading records vended by the Library that are Works and are reconciled to Wikidata. LUX pipeline will add Wikimedia images to these via this property.| representation |
 
 **JSON Example**
-![Representation](assets/Visual/representation.png)
+![Representation](assets/Textual/representation.png)
 
 ---
 
@@ -283,7 +315,7 @@ example pending
 | Digital Reference | Webpages and IIIF manifests. | subject_of > digitally_carried_by |
 
 **JSON Example**
-![Digital Reference](assets/Visual/digitalreference.png)
+![Digital Reference](assets/Textual/digitalreference.png)
 
 ---
 
@@ -292,7 +324,7 @@ example pending
 | Digital Reference Type | Classification of digital reference. | subject_of > digitally_carried_by > classified_as |
 
 **JSON Example**
-![Digital Reference Classification](assets/Visual/digitalreference-classification.png)
+![Digital Reference Classification](assets/Textual/digitalreference-classification.png)
 
 ---
 
@@ -301,7 +333,7 @@ example pending
 | Name for Digital Reference | Label for the digital reference. | subject_of > digitally_carried_by > identified_by |
 
 **JSON Example**
-![Digital Reference Name](assets/Visual/digitalreference-name.png)
+![Digital Reference Name](assets/Textual/digitalreference-name.png)
 
 ---
 
@@ -310,7 +342,7 @@ example pending
 | Digital Reference Format | Media type of digital object (e.g. "text/html"). | subject_of > digitally_carried_by > format |
 
 **JSON Example**
-![Digital Reference Format](assets/Visual/digitalreference-format.png)
+![Digital Reference Format](assets/Textual/digitalreference-format.png)
 
 ---
 
@@ -319,4 +351,4 @@ example pending
 | Digital Reference Access Point | Website URL or URI of digital object. | subject_of > digitally_carried_by > access_point |
 
 **JSON Example**
-![Digital Reference Access Point](assets/Visual/digitalreference-accesspoint.png)
+![Digital Reference Access Point](assets/Textual/digitalreference-accesspoint.png)

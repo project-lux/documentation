@@ -7,6 +7,7 @@ This site provides technical and conceptual documentation for [LUX](https://lux.
 
 * [Human Made Object](hmo.md)
 * [Digital Object](digitalobject.md)
+* [Textual Work](textualwork.md)
 * [Visual Work](visualwork.md)
 * [Group](group.md)
 * [Person](person.md)

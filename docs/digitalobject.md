@@ -159,7 +159,7 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Statement Type | Classification of the statement about the Digital Object | referred_to_by > classified_as |
+| Statement Type | Classification of the statement.| referred_to_by > classified_as |
 
 **JSON Example**
 ![Statement Classification](assets/DO/statement-classification.png)
@@ -177,7 +177,7 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Name for Statement | Label override for statements in UI. | referred_to_by > identified_by |
+| Name for Statement | In LUX, units can leverage this field to push a specific label for statements on a Work. For example, if the classification label is not your preferred label, you can use a string label in the content of the statement name and the front end will display this as the statement label. | referred_to_by > identified_by |
 
 **JSON Example**
 example pending

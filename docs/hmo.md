@@ -259,7 +259,7 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Statement | Statements about the Human Made Object. | referred_to_by > content |
+| Statement | Statement about the Human Made Object. | referred_to_by > content |
 
 **JSON Example**
 ![Statement Content](assets/HMO/statement-content.png)
@@ -268,7 +268,7 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Statement Type | Classification of the statement about the Human Made Object, e.g. "provenance statement". | referred_to_by > classified_as |
+| Statement Type | Classification of the statement, e.g. "provenance statement". | referred_to_by > classified_as |
 
 **JSON Example**
 ![Statement Classification](assets/HMO/statement-classification.png)
@@ -295,7 +295,7 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Name for Statement | Label override for statements in UI. | referred_to_by > identified_by |
+| Name for Statement | In LUX, units can leverage this field to push a specific label for statements on a Work. For example, if the classification label is not your preferred label, you can use a string label in the content of the statement name and the front end will display this as the statement label. | referred_to_by > identified_by |
 
 **JSON Example**
 ![Statement Name](assets/HMO/statement-name.png)

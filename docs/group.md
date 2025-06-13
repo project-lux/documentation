@@ -197,7 +197,7 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Statement Type | Classification of the statement about the Group, e.g. "biographical". | referred_to_by > classified_as |
+| Statement Type | Classification of the statement, e.g. "biographical". | referred_to_by > classified_as |
 
 **JSON Example**
 ![Statement Classification](assets/Group/statement-classification.png)
@@ -206,7 +206,7 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Statement Language | Language of the statement about the Group, e.g. "english". | referred_to_by > language |
+| Statement Language | Language of the statement, e.g. "english". | referred_to_by > language |
 
 **JSON Example**
 ![Statement Language](assets/Group/statement-language.png)
