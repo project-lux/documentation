@@ -91,7 +91,7 @@ example pending
 | Location of Creation Event | Location of creation. Often, but not always, the same as the production location of the Human Made Object. | created_by > took_place_at |
 
 **JSON Example**
-example pending 
+![Creation Location](assets/Visual/creation-location.png)
 
 ---
 
@@ -100,7 +100,7 @@ example pending
 | Creation Event Type | Classification of the creation. | created_by > classified_as |
 
 **JSON Example**
-example pending
+![Creation Classification](assets/Visual/creation-classification.png)
 
 ---
 
