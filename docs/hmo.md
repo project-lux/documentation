@@ -11,7 +11,7 @@ The class for physical objects that have some value in human society is HumanMad
 - ["Thou Who Hast Slept All Night Upon the Storm," galley proof, corrected, with proofreaders' marks, n.d.](https://lux.collections.yale.edu/data/object/b3de70c2-0e6f-4304-a4bd-ce3371baf5ed)
 - [Mosaic Floor with Views of Alexandria and Memphis
 ](https://lux.collections.yale.edu/data/object/6ab8ccb4-1156-49bb-aa48-05480c120ebf)
-- [Dort or Dordrecht: The Packetboat from Rotterdam Becalmed] (https://lux.collections.yale.edu/data/object/047181f4-2fdf-43fd-abbe-f16d7f9edc10)
+- [Dort or Dordrecht: The Packetboat from Rotterdam Becalmed](https://lux.collections.yale.edu/data/object/047181f4-2fdf-43fd-abbe-f16d7f9edc10)
 - [Deinonychus antirrhopus](https://lux.collections.yale.edu/data/object/af87c526-98f2-4609-8044-cb648d25a930)
 - [Kodak Kodabromide Paper from circa 1945](https://lux.collections.yale.edu/data/object/570376a4-a096-4fe7-baa0-674ef653d5d7)
 - [Violin, 3/4 size](https://lux.collections.yale.edu/data/object/618ff3cb-79d2-4b52-ba46-58e291f52761)
