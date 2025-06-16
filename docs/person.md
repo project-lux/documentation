@@ -4,6 +4,15 @@ All activities are carried out by some actor, either a person (Person) or a grou
 
 [Linked.art's Person Model Documentation](https://linked.art/model/actor/)
 
+### Representative Data Examples
+
+- [Maurie McInnis](https://lux.collections.yale.edu/data/person/5b6c4695-4c51-4bbe-bd8f-e32e18996d84)
+- [John Trumbull](https://lux.collections.yale.edu/data/person/c225d5e4-8767-4a25-802b-af054d5e8f52)
+- [Joan of Arc](https://lux.collections.yale.edu/view/person/8e28b6af-dec6-4657-a556-59b76f3183bb)
+- [Herodotus](https://lux.collections.yale.edu/data/person/33468dd1-e5c5-452c-b5e2-214c0e083850)
+ 
+
+### LUX Modeling Documentation
 
 - [Names & Identifiers](#names-and-identifiers)
 - [Classification](#classification)

@@ -1,10 +1,19 @@
-# Human Made Object
+# Digital Object
 
 It is very unlikely that the descriptions provided in the Linked Art model are the only digital representations of the entities that they describe. There are also digital images, web pages, and other related content that should be referenced from the descriptions of the entities. The digital object may be also be the entity of interest, such as an eBook, net art, or a digital installation with its own separate record. 
 
 Digital objects are generally treated in the same way as physical objects -- they are carriers of information, not the information itself.
 
 [Linked.art's Digital Object Model Documentation](https://linked.art/model/digital/)
+
+### Representative Data Examples
+
+- [Divided We Govern](https://lux.collections.yale.edu/data/digital/600b2f09-ad30-4423-b7b4-575fd24ff26c)
+- [Interview with Martina Droth, 2016-10-14](https://lux.collections.yale.edu/data/digital/600b2f09-ad30-4423-b7b4-575fd24ff26c)
+- [The flight of Apollo 11 : Eagle has landed](https://lux.collections.yale.edu/data/digital/105ae1fe-caf4-47ac-9049-867b13d8d923)
+
+
+### LUX Modeling Documentation
 
 
 - [Names & Identifiers](#names-and-identifiers)

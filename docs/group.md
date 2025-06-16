@@ -5,6 +5,16 @@ All activities are carried out by some actor, either a person (Person) or a grou
 [Linked.art's Group Model Documentation](https://linked.art/model/actor/)
 
 
+### Representative Data Examples
+
+- [Yale University](https://lux.collections.yale.edu/data/group/44126da0-a6bd-4248-aff3-a3804201a21c)
+- [Entomology Collection, Yale Peabody Museum](https://lux.collections.yale.edu/data/group/0345b832-2c37-447a-a28c-4436493d918e)
+- [Fleetwood Mac](https://lux.collections.yale.edu/data/group/4946f182-6982-4e3f-939b-3609bc8089ce)
+- [Mystic Seaport](https://lux.collections.yale.edu/data/group/9ac63238-bd4e-4c3e-b4f2-121fbba6870b)
+- [Marx Brothers](https://lux.collections.yale.edu/data/group/68443df8-c8ae-4989-983d-1dc863dcca98)
+
+### LUX Modeling Documentation
+
 - [Names & Identifiers](#names-and-identifiers)
 - [Classification](#classification)
 - [Contact Point](#contact-point)

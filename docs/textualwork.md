@@ -5,6 +5,18 @@ This section documents the model for documents that contain text, including artw
 [Linked.art's Textual Work Model Documentation](https://linked.art/model/document/)
 
 
+### Representative Data Examples
+
+- [Voynich Manuscript](https://lux.collections.yale.edu/data/text/7ef864d8-076a-4c6c-b931-819cb2f9f3c1)
+- [1 maia—prazdnik mira i truda](https://lux.collections.yale.edu/data/text/2c41f1f0-5bd6-42be-8c27-780c37298a9b)
+- [Modern pictures, water-colour drawings, and engravings. 1876/12/9](https://lux.collections.yale.edu/data/text/a2c966a9-8b71-4710-80f4-cc83ebddf198)
+- [The tragicall historie of Hamlet, Prince of Denmarke](https://lux.collections.yale.edu/data/text/20d27ee5-4a8b-47e4-a905-0977fcb9d943)
+- [Engishiki](https://lux.collections.yale.edu/data/text/9dee6b0d-7176-4351-b26a-79f23b79555c)
+- [Here in thys boke afore...](https://lux.collections.yale.edu/data/text/654c51b6-c1f3-4459-8b38-b73ca79f5243)
+
+### LUX Modeling Documentation
+
+
 - [Names & Identifiers](#names-and-identifiers)
 - [Classification](#classification)
 - [Creation](#creation)
@@ -14,7 +26,6 @@ This section documents the model for documents that contain text, including artw
 - [About](#about)
 - [Rights](#rights)
 - [Digital Images](#digital-images)
-
 
 
 ### Names and Identifiers

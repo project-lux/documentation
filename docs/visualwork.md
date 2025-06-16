@@ -6,6 +6,15 @@ This visual work is modeled as a VisualItem resource, associated with the HumanM
 
 [Linked.art's Visual Work Model Documentation](https://linked.art/model/object/aboutness/)
 
+### Representative Data Examples
+
+- [One dollar private bank note issued by the Bank of Augusta](https://lux.collections.yale.edu/data/visual/8f560208-30ec-4414-98e7-42a467e8c90c)
+- [Dort or Dordrecht: The Packetboat from Rotterdam Becalmed](https://lux.collections.yale.edu/data/visual/51e142d8-799a-4178-8706-4435253a355c)
+- [Photographic views of Kern County California](https://lux.collections.yale.edu/data/visual/f46be110-ce33-47c6-8fae-c1e7143afd5a)
+- [1 maia—prazdnik mira i truda](https://lux.collections.yale.edu/data/visual/c35629f2-b067-40e6-8606-81eb45688837)
+
+### LUX Modeling Documentation
+
 
 - [Names & Identifiers](#names-and-identifiers)
 - [Classification](#classification)
