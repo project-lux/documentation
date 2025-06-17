@@ -1,7 +1,7 @@
 # LUX Documentation Index
 
 
-This site provides technical and conceptual documentation for [LUX](https://lux.collections.yale.edu/), Yale University’s linked data discovery environment for cultural heritage collections. It covers data modeling across all external and internal sources, and uses the final LUX record to provide examples for  Classes and properties. Whether you're a developer, data specialist, or researcher, these materials are intended to support understanding, reuse, and extension of the LUX system.
+This site provides technical and conceptual documentation for [LUX](https://lux.collections.yale.edu/), Yale University’s linked data discovery environment for cultural heritage collections. It covers data modeling across all external and internal sources, and uses the final LUX record to provide examples for  Classes and Properties. Whether you're a developer, data specialist, or researcher, these materials are intended to support understanding, reuse, and extension of the LUX system.
 
 ## Available Documentation
 
@@ -25,13 +25,19 @@ This site provides technical and conceptual documentation for [LUX](https://lux.
 
 ---
 
-To add new pages:
+## To add or edit pages
 
-1. Place your `.md` file inside the `docs/` folder.
+1. Place your `.md` file inside the `docs/` folder OR edit the appropriate .md file.
 2. Add the assets to the `assets/` folder.
 3. Link it here like: `[Title](filename.md)`.
 4. Link to it in the mkdocs.yaml like: `- Title: filename.md`
 5. Commit and push your changes.
+
+---
+
+## To submit feedback
+
+Please submit feedback via [LUX's feedback form](https://yaleuniversity.tfaforms.net/99?tfa_301=https%3A%2F%2Flux.collections.yale.edu%2F)
 
 ---
 
