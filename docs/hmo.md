@@ -327,7 +327,7 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Part of Set | Set this object is a member of. | member_of |
+| Member of Set | Set this object is a member of. | member_of |
 
 **JSON Example**
 ![Member Of](assets/HMO/member-of.png)
