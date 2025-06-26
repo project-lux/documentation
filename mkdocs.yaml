@@ -12,7 +12,9 @@ nav:
   - Visual Work: visualwork.md
   - Group: group.md
   - Person: person.md
-
+  - Place: place.md
+  - Period: period.md
+  - Activity: activity.md
 # Optional: Make URLs cleaner
 use_directory_urls: true
 
