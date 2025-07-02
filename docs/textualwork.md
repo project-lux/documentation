@@ -24,7 +24,7 @@ This section documents the model for documents that contain text, including artw
 - [Part Of](#part-of)
 - [About](#about)
 - [Rights](#rights)
-- [Digital Images](#digital-images)
+- [Digital Reference](#digital-reference)
 
 
 ### Names and Identifiers
@@ -309,7 +309,7 @@ example pending
 **JSON Example**
 example pending
 
-### Digital Images
+### Digital Reference
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |

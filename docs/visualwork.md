@@ -24,7 +24,7 @@ This visual work is modeled as a VisualItem resource, associated with the HumanM
 - [Part Of](#part-of)
 - [About](#about)
 - [Rights](#rights)
-- [Digital Images](#digital-images)
+- [Digital Reference](#digital-reference)
 
 
 
@@ -276,7 +276,7 @@ example pending
 ![Subject To Name](assets/Visual/subject-to-name.png)
 
 
-### Digital Images
+### Digital Reference
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |

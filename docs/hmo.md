@@ -27,7 +27,7 @@ The class for physical objects that have some value in human society is HumanMad
 - [Statement](#statement)
 - [Part Of](#part-of)
 - [Referenced Works](#referenced-works)
-- [Digital Images](#digital-images)
+- [Digital Reference](#digital-reference)
 - [Current Status](#current-status)
 
 
@@ -352,7 +352,7 @@ example pending
 ![Carries](assets/HMO/carries.png)
 
 
-### Digital Images
+### Digital Reference
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |

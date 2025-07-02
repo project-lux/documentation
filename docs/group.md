@@ -24,6 +24,7 @@ All activities are carried out by some actor, either a person (Person) or a grou
 - [Professional Activity](#professional-activity)
 - [Statement](#statement)
 - [Member Of](#member-of)
+- [Digital Reference](#digital-reference)
 
 
 
@@ -232,7 +233,7 @@ example pending
 ![Member Of](assets/Group/member-of.png)
 
 
-### Digital Images
+### Digital Reference
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |

@@ -22,7 +22,7 @@ Digital objects are generally treated in the same way as physical objects -- the
 - [Statement](#statement)
 - [Part Of](#part-of)
 - [Referenced Works](#referenced-works)
-- [Digital Images](#digital-images)
+- [Digital Reference](#digital-reference)
 
 
 
@@ -230,7 +230,7 @@ example pending
 ![Carries](assets/DO/carries.png)
 
 
-### Digital Images
+### Digital References
 
 
 | LUX Field Name | LUX Description | LUX Path |

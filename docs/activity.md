@@ -17,6 +17,7 @@ Most of the events and activities and other temporal aspects that we care about 
 - [Classification](#classification)
 - [Timespan](#timespan)
 - [Statement](#statement)
+- [Digital Reference](#digital-reference)
 
 
 
@@ -24,7 +25,7 @@ Most of the events and activities and other temporal aspects that we care about 
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Name | Name of Period | identified_by > Name > content |
+| Name | Name of Activity | identified_by > Name > content |
 
 **JSON Example**
 ![Name Content](assets/Activity/name-content.png)
@@ -51,7 +52,7 @@ Most of the events and activities and other temporal aspects that we care about 
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Exact Match | Holds internal URI or reconciled URI.  | equivalent |
+| Exact Match | On Activities, the equivalent property usually only holds the record of internal unit's URI that contributes to the LUX record. In the future as more reconciliation occurs, it will hold external URIs as well.  | equivalent |
 
 **JSON Example**
 ![Equivalent](assets/Activity/equivalent.png)
@@ -60,7 +61,7 @@ Most of the events and activities and other temporal aspects that we care about 
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Internal Label | Human-readable label for Period. | _label |
+| Internal Label | Human-readable label for Activity. | _label |
 
 **JSON Example**
 ![Label](assets/Activity/label.png)
@@ -70,17 +71,34 @@ Most of the events and activities and other temporal aspects that we care about 
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Type | Classification of the Period. The LUX pipeline currently adds a classification of "Period" to all Period records, to aid in faceting in the UI. | classified_as |
+| Type | Classification of the Activity. | classified_as |
 
 **JSON Example**
 ![Classification](assets/Activity/classified-as.png)
 
+### Carried Out
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Activity Carried Out By| Used to denote actors who carried out the Activity. | carried_out_by |
+
+**JSON Example**
+![Carried Out By](assets/Activity/carriedoutby.png)
+
+### Took Place At
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Location of Activity  | Used to denote the location where the Activity took place. | took_place_at |
+
+**JSON Example**
+![Location](assets/Activity/location.png)
 
 ### TimeSpan
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| TimeSpan | Timespan of Period. LUX pipeline currently attempts to parse string dates into structured timespans for Periods, to aid in faceting in the UI. | timespan |
+| TimeSpan | Timespan of Activity.  | timespan |
 
 **JSON Example**
 ![TimeSpan](assets/Activity/timespan.png)
@@ -90,7 +108,7 @@ Most of the events and activities and other temporal aspects that we care about 
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Statement | Statement about the Period. | referred_to_by > content |
+| Statement | Statement about the Activity. | referred_to_by > content |
 
 **JSON Example**
 ![Statement Content](assets/Activity/statement-content.png)
@@ -99,7 +117,7 @@ Most of the events and activities and other temporal aspects that we care about 
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Statement Type | Classification of the statement about the Period. | referred_to_by > classified_as |
+| Statement Type | Classification of the statement about the Activity, e.g. "exhibition description". | referred_to_by > classified_as |
 
 **JSON Example**
 example pending
@@ -108,8 +126,63 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Statement Language | Language of the statement about the Period.| referred_to_by > language |
+| Statement Language | Language of the statement about the Activity.| referred_to_by > language |
 
 **JSON Example**
 example pending
+
+### Digital Reference
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Depicting Image | Images of Places are suppressed in the UI in favor of map tiles, but there may still be data here from Wikimedia reconciliation. | representation |
+
+**JSON Example**
+example pending
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Digital Reference | Webpages and IIIF manifests. | subject_of > digitally_carried_by |
+
+**JSON Example**
+![Digital Reference](assets/Place/digitalreference.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Digital Reference Type | Classification of digital reference. | subject_of > digitally_carried_by > classified_as |
+
+**JSON Example**
+![Digital Reference Classification](assets/Place/digitalreference-classification.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Name for Digital Reference | Label for the digital reference. | subject_of > digitally_carried_by > identified_by |
+
+**JSON Example**
+example pending
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Digital Reference Format | Media type of digital object (e.g. "text/html"). | subject_of > digitally_carried_by > format |
+
+**JSON Example**
+example pending
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Digital Reference Access Point | The ID field in this array is used to store the website URL, for example, "https://nyc.gov". | subject_of > digitally_carried_by > access_point |
+
+**JSON Example**
+![Digital Reference Access Point](assets/Place/digitalreference-accesspoint.png)
+
 

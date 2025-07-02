@@ -19,6 +19,7 @@ Places are one of the foundational classes in the model. Events and activities o
 - [Defined By](#defined-by)
 - [Statement](#statement)
 - [Member Of](#member-of)
+- [Digital Reference](#digital-reference)
 
 
 
@@ -135,7 +136,7 @@ example pending
 ![Part Of](assets/Place/part-of.png)
 
 
-### Digital Images
+### Digital Reference
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
