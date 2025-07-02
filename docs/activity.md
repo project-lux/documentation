@@ -8,7 +8,6 @@ Most of the events and activities and other temporal aspects that we care about 
 
 - [Crafting Worldviews exhibition](https://lux.collections.yale.edu/data/activity/67d76666-c786-4dfd-b669-8a8081c13233)
 - [Centennial Exposition](https://lux-front-tst.collections.yale.edu/data/activity/6bebc918-a857-45b4-8e47-ec48e2fdd7bc)
-- []()
 
  
 
@@ -28,7 +27,7 @@ Most of the events and activities and other temporal aspects that we care about 
 | Name | Name of Period | identified_by > Name > content |
 
 **JSON Example**
-![Name Content](assets/Period/name-content.png)
+![Name Content](assets/Activity/name-content.png)
 
 ---
 
@@ -37,7 +36,7 @@ Most of the events and activities and other temporal aspects that we care about 
 | Name Type | The classification of the name, e.g. "primary". | identified_by > Name > classified_as |
 
 **JSON Example**
-![Name Classification](assets/Period/name-classification.png)
+![Name Classification](assets/Activity/name-classification.png)
 
 ---
 
@@ -46,7 +45,7 @@ Most of the events and activities and other temporal aspects that we care about 
 | Name Language | The language of the name, e.g. "English". | identified_by > Name > language |
 
 **JSON Example**
-![Name Language](assets/Period/name-language.png)
+![Name Language](assets/Activity/name-language.png)
 
 ---
 
@@ -55,7 +54,7 @@ Most of the events and activities and other temporal aspects that we care about 
 | Exact Match | Holds internal URI or reconciled URI.  | equivalent |
 
 **JSON Example**
-![Equivalent](assets/Period/equivalent.png)
+![Equivalent](assets/Activity/equivalent.png)
 
 ---
 
@@ -64,7 +63,7 @@ Most of the events and activities and other temporal aspects that we care about 
 | Internal Label | Human-readable label for Period. | _label |
 
 **JSON Example**
-![Label](assets/Period/label.png)
+![Label](assets/Activity/label.png)
 
 
 ### Classification
@@ -74,7 +73,7 @@ Most of the events and activities and other temporal aspects that we care about 
 | Type | Classification of the Period. The LUX pipeline currently adds a classification of "Period" to all Period records, to aid in faceting in the UI. | classified_as |
 
 **JSON Example**
-![Classification](assets/Period/classified-as.png)
+![Classification](assets/Activity/classified-as.png)
 
 
 ### TimeSpan
@@ -84,7 +83,7 @@ Most of the events and activities and other temporal aspects that we care about 
 | TimeSpan | Timespan of Period. LUX pipeline currently attempts to parse string dates into structured timespans for Periods, to aid in faceting in the UI. | timespan |
 
 **JSON Example**
-![TimeSpan](assets/Period/timespan.png)
+![TimeSpan](assets/Activity/timespan.png)
 
 
 ### Statement
@@ -94,7 +93,7 @@ Most of the events and activities and other temporal aspects that we care about 
 | Statement | Statement about the Period. | referred_to_by > content |
 
 **JSON Example**
-![Statement Content](assets/Period/statement-content.png)
+![Statement Content](assets/Activity/statement-content.png)
 
 ---
 
