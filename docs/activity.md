@@ -7,7 +7,7 @@ Most of the events and activities and other temporal aspects that we care about 
 ### Representative Data Examples
 
 - [Crafting Worldviews exhibition](https://lux.collections.yale.edu/data/activity/67d76666-c786-4dfd-b669-8a8081c13233)
-- []()
+- [Centennial Exposition](https://lux-front-tst.collections.yale.edu/data/activity/6bebc918-a857-45b4-8e47-ec48e2fdd7bc)
 - []()
 
  

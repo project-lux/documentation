@@ -142,7 +142,7 @@ example pending
 | Depicting Image | Images of Places are suppressed in the UI in favor of map tiles, but there may still be data here from Wikimedia reconciliation. | representation |
 
 **JSON Example**
-![Representation](assets/Place/representation.png)
+example pending
 
 ---
 
