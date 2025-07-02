@@ -37,7 +37,7 @@ Periods are a sub-Class of Events. They are defined as a period of time, likely 
 | Name Type | The classification of the name, e.g. "primary". | identified_by > Name > classified_as |
 
 **JSON Example**
-![Name Classification](assets/Period/name-classification.png)
+example pending
 
 ---
 
@@ -46,7 +46,7 @@ Periods are a sub-Class of Events. They are defined as a period of time, likely 
 | Name Language | The language of the name, e.g. "English". | identified_by > Name > language |
 
 **JSON Example**
-![Name Language](assets/Period/name-language.png)
+example pending
 
 ---
 
@@ -94,7 +94,7 @@ Periods are a sub-Class of Events. They are defined as a period of time, likely 
 | Statement | Statement about the Period. | referred_to_by > content |
 
 **JSON Example**
-![Statement Content](assets/Period/statement-content.png)
+example pending
 
 ---
 
