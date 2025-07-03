@@ -1,16 +1,14 @@
-# Place
+# Set
 
-Places are one of the foundational classes in the model. Events and activities occur at a place, objects exist at some location, and people and organizations have associated locations where they reside or are otherwise associated with. Places are extents in space, independent of time or what may or may not be present in that space. For built works such as architecture and works that are fixed in location due to their media (a cave drawing for example), Place is a defining characteristic.
-
+Sets are conceptual groupings, rather than physical ones. The set of objects in a virtual exhibition or simply the set of a person's favorite objects never change their physical state by being part of the Set or not. One might have a set of destroyed objects which would be extremely strange if the Set was a physical aggregation of things which no longer existed. Sets are, thus, created by a Creation, not by a Production, and cannot be destroyed. A set may have zero members at any given point in time without going out of existence.
 
 See more at:
-[Linked.art's Place Model Documentation](https://linked.art/model/place/)
+[Linked.art's Set Model Documentation](https://linked.art/model/collection/)
 
 ### Representative Data Examples
 
-- [New Haven](https://lux.collections.yale.edu/data/place/a5b17437-4725-48ec-8a9f-b014e3187b64)
-- [Solar system](https://lux.collections.yale.edu/data/place/887b74cc-1a53-4640-95fb-29250a08b085)
-- [Weddell Sea](https://lux.collections.yale.edu/data/place/e1f67149-d9c2-4610-8e84-84199e46c3b3)
+- []()
+- []()
 
  
 
@@ -18,9 +16,8 @@ See more at:
 
 - [Names & Identifiers](#names-and-identifiers)
 - [Classification](#classification)
-- [Defined By](#defined-by)
+- [Creation](#creation)
 - [Statement](#statement)
-- [Member Of](#member-of)
 - [Digital Reference](#digital-reference)
 
 
@@ -29,10 +26,10 @@ See more at:
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Name | Name of Place | identified_by > Name > content |
+| Name | Name of Set | identified_by > Name > content |
 
 **JSON Example**
-![Name Content](assets/Place/name-content.png)
+![Name Content](assets/Set/name-content.png)
 
 ---
 
@@ -41,7 +38,7 @@ See more at:
 | Name Type | The classification of the name, e.g. "primary". | identified_by > Name > classified_as |
 
 **JSON Example**
-![Name Classification](assets/Place/name-classification.png)
+![Name Classification](assets/Set/name-classification.png)
 
 ---
 
@@ -50,80 +47,50 @@ See more at:
 | Name Language | The language of the name, e.g. "English". | identified_by > Name > language |
 
 **JSON Example**
-![Name Language](assets/Place/name-language.png)
+![Name Language](assets/Set/name-language.png)
 
 ---
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Exact Match | Holds internal URI or reconciled URI.  | equivalent |
+| Exact Match | On Sets, the equivalent property usually only holds the record of internal unit's URI that contributes to the LUX record. | equivalent |
 
 **JSON Example**
-![Equivalent](assets/Place/equivalent.png)
+![Equivalent](assets/Set/equivalent.png)
 
 ---
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Internal Label | Human-readable label for Place. | _label |
+| Internal Label | Human-readable label for Set. | _label |
 
 **JSON Example**
-![Label](assets/Place/label.png)
+![Label](assets/Set/label.png)
 
 
 ### Classification
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Type | Classification of the Place, e.g. "city". | classified_as |
+| Type | Classification of the Set. | classified_as |
 
 **JSON Example**
-![Classification](assets/Place/classified-as.png)
+![Classification](assets/Set/classified-as.png)
 
-
-### Defined By
+### Creation
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Defined By | Used to store WKT (well known text) coordinates for polygon (map bounding box) or point for documented Place. | defined_by |
+| Creator in Creation Event | Creator of Set. | created_by > carried_out_by |
 
 **JSON Example**
-![Defined By](assets/Place/defined-by.png)
-
-
-### Statement
-
-| LUX Field Name | LUX Description | LUX Path |
-| -------------- | --------------- | -------- |
-| Statement | Statement about the Place. | referred_to_by > content |
-
-**JSON Example**
-![Statement Content](assets/Place/statement-content.png)
+![Creation Carried Out By](assets/Set/creation-carriedoutby.png)
 
 ---
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Statement Type | Classification of the statement about the Place, e.g. "description". | referred_to_by > classified_as |
-
-**JSON Example**
-![Statement Classification](assets/Place/statement-classification.png)
-
----
-
-| LUX Field Name | LUX Description | LUX Path |
-| -------------- | --------------- | -------- |
-| Statement Language | Language of the statement about the Place, e.g. "english". | referred_to_by > language |
-
-**JSON Example**
-![Statement Language](assets/Place/statement-language.png)
-
-
-### Member Of
-
-| LUX Field Name | LUX Description | LUX Path |
-| -------------- | --------------- | -------- |
-| Member of Set | Set this Place is a member of. | member_of |
+| Location of Creation Event | Location of creation. | created_by > took_place_at |
 
 **JSON Example**
 example pending
@@ -132,17 +99,72 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Part Of | Used to document what Places this Place is a part of, e.g. New York City is a part of New York State. | part_of |
+| Creation Event Type | Classification of the creation. | created_by > classified_as |
 
 **JSON Example**
-![Part Of](assets/Place/part-of.png)
+![Creation Classification](assets/Set/creation-classification.png)
 
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| TimeSpan of Creation Event | Timespan of creation. | created_by > timespan |
+
+**JSON Example**
+example pending
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Statement about Creation Event | Statements about the Creation. | created_by > referred_to_by |
+
+**JSON Example**
+example pending
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Cause of Creation Event | If an Activity with a separate record and URI is the cause of a Work's creation, this is where you can document that relationship. | created_by > caused_by |
+
+
+**JSON Example**
+![Creation Caused By](assets/Set/creation-causedby.png)
+
+
+### Statement
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Statement | Statement about the Set. | referred_to_by > content |
+
+**JSON Example**
+![Statement Content](assets/Set/statement-content.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Statement Type | Classification of the statement about the Set. | referred_to_by > classified_as |
+
+**JSON Example**
+example pending
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Statement Language | Language of the statement about the Set.| referred_to_by > language |
+
+**JSON Example**
+example pending
 
 ### Digital Reference
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Depicting Image | Images of Places are suppressed in the UI in favor of map tiles, but there may still be data here from Wikimedia reconciliation. | representation |
+| Depicting Image |  | representation |
 
 **JSON Example**
 example pending
@@ -187,10 +209,9 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Digital Reference Access Point | The ID field in this array is used to store the website URL, for example, "https://nyc.gov". | subject_of > digitally_carried_by > access_point |
+| Digital Reference Access Point | The ID field in this array is used to store the website URL. | subject_of > digitally_carried_by > access_point |
 
 **JSON Example**
 ![Digital Reference Access Point](assets/Place/digitalreference-accesspoint.png)
-
 
 

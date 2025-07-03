@@ -14,6 +14,7 @@ This site provides technical and conceptual documentation for [LUX](https://lux.
 * [Place](place.md)
 * [Period](period.md)
 * [Activity](activity.md)
+* [Set](set.md)
 
 ---
 

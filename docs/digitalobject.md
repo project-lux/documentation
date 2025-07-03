@@ -4,6 +4,7 @@ It is very unlikely that the descriptions provided in the Linked Art model are t
 
 Digital objects are generally treated in the same way as physical objects -- they are carriers of information, not the information itself.
 
+See more at:
 [Linked.art's Digital Object Model Documentation](https://linked.art/model/digital/)
 
 ### Representative Data Examples

@@ -4,6 +4,8 @@ Every human-made object with an intent to look a certain way is the carrier of a
 
 This visual work is modeled as a VisualItem resource, associated with the HumanMadeObject instances via the shows property. The VisualItem then has various properties described below that are used to describe the different facets.
 
+
+See more at:
 [Linked.art's Visual Work Model Documentation](https://linked.art/model/object/aboutness/)
 
 ### Representative Data Examples

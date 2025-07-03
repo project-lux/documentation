@@ -2,6 +2,8 @@
 
 This section documents the model for documents that contain text, including artworks such as medieval manuscripts, archival material such as letters, ledgers or diaries, scholarly communication such as journals, articles and monographs, digital objects such as web pages, or any other sort of written communication.
 
+
+See more at:
 [Linked.art's Textual Work Model Documentation](https://linked.art/model/document/)
 
 

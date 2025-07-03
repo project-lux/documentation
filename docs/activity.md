@@ -2,6 +2,8 @@
 
 Most of the events and activities and other temporal aspects that we care about are directly related to the objects, people, and other entities. These would include the activity that brings the entity into existence (productions, creations, births and formations), takes them out of existence (destructions, erasures, dissolutions) or otherwise significantly affects their appearance in the cultural record (when there were encountered, their publication, a person's professional activities). There are two broad classes of activity which have their own specific models -- the provenance or ownership history of the object, and exhibitions.
 
+
+See more at:
 [Linked.art's Event Model Documentation](https://linked.art/model/event/)
 
 ### Representative Data Examples

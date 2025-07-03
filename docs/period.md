@@ -2,6 +2,8 @@
 
 Periods are a sub-Class of Events. They are defined as a period of time, likely somewhat arbitrarily defined, such as an "age" or century. 
 
+
+See more at:
 [Linked.art's Event Model Documentation](https://linked.art/model/event/)
 
 ### Representative Data Examples

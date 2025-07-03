@@ -15,6 +15,7 @@ nav:
   - Place: place.md
   - Period: period.md
   - Activity: activity.md
+  - Set: set.md
 # Optional: Make URLs cleaner
 use_directory_urls: true
 

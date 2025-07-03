@@ -2,6 +2,8 @@
 
 All activities are carried out by some actor, either a person (Person) or a group of people (Group) such as an organization or company. The identity and description of these actors are very important to record in order to provide the human context for the activities, and their related places and objects. The creators, finders, owners, sellers and curators of objects are all relevant to understanding our cultural heritage.
 
+
+See more at:
 [Linked.art's Person Model Documentation](https://linked.art/model/actor/)
 
 ### Representative Data Examples
