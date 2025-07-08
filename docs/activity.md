@@ -17,6 +17,8 @@ See more at:
 
 - [Names & Identifiers](#names-and-identifiers)
 - [Classification](#classification)
+- [Carried Out By](#carried-out-by)
+- [Took Place At](#took-place-at)
 - [Timespan](#timespan)
 - [Statement](#statement)
 - [Digital Reference](#digital-reference)
@@ -78,7 +80,7 @@ See more at:
 **JSON Example**
 ![Classification](assets/Activity/classified-as.png)
 
-### Carried Out
+### Carried Out By
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
@@ -104,6 +106,51 @@ See more at:
 
 **JSON Example**
 ![TimeSpan](assets/Activity/timespan.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Begin of the Begin | Absolute beginning of timespan.  | timespan > begin_of_the_begin |
+
+**JSON Example**
+![BotB](assets/Activity/botb.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| End of the Begin | End of beginning of timespan.  | timespan > end_of_the_begin |
+
+**JSON Example**
+![EotB](assets/Activity/eotb.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Begin of the End | Beginning of end of timespan.  | timespan > begin_of_the_end |
+
+**JSON Example**
+![BotE](assets/Activity/bote.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| End of the End | Absolute end of timespan.  | timespan > end_of_the_end |
+
+**JSON Example**
+![EotE](assets/Activity/eote.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Timespan Name | String version of timespan.  | timespan > identified_by |
+
+**JSON Example**
+![TimespanName](assets/Activity/timespan-name.png)
 
 
 ### Statement
@@ -137,7 +184,7 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Depicting Image | Images of Places are suppressed in the UI in favor of map tiles, but there may still be data here from Wikimedia reconciliation. | representation |
+| Depicting Image | Images of Activities are currently suppressed in front end. | representation |
 
 **JSON Example**
 example pending
@@ -164,10 +211,10 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Name for Digital Reference | Label for the digital reference. | subject_of > digitally_carried_by > identified_by |
+| Name for Digital Reference | This field is used to for the UI to have a human readable label of the digital reference link, e.g. "View the exhibition page on the Yale University Art Gallery website" | subject_of > digitally_carried_by > identified_by |
 
 **JSON Example**
-example pending
+![Digital Reference Name](assets/Place/digitalreference-name.png)
 
 ---
 
@@ -182,9 +229,8 @@ example pending
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Digital Reference Access Point | The ID field in this array is used to store the website URL, for example, "https://nyc.gov". | subject_of > digitally_carried_by > access_point |
+| Digital Reference Access Point | The ID field in this array is used to store the website URL, for example, "https://artgallery.yale.edu/exhibitions/exhibition/crafting-worldviews-art-and-science-europe-1500-1800". | subject_of > digitally_carried_by > access_point |
 
 **JSON Example**
 ![Digital Reference Access Point](assets/Place/digitalreference-accesspoint.png)
-
 
