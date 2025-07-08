@@ -3,6 +3,10 @@
 
 This site provides technical and conceptual documentation for [LUX](https://lux.collections.yale.edu/), Yale University’s linked data discovery platform for cultural heritage collections. It covers data modeling across all external and internal sources, and uses the final LUX record to provide examples for Classes and Properties. Whether you're a developer, data specialist, or researcher, these materials are intended to support understanding, reuse, and extension of the LUX system.
 
+Users will notice properties repeat across Classes. This documentation takes a comprehensive view and includes every property per Class, rather that store, for example, the name documentation in one central location and review to it. Thus, each Class below contains every property currently being used in the LUX platform. 
+
+There are occasionally properties in the data that are not represented by the Linked.art model and exist to provide necessary data points for search and retrieval. Information about these can be found under Available Documentation, Supplementary Fields.
+
 ## Available Documentation
 
 * [Human Made Object](hmo.md)
@@ -15,6 +19,7 @@ This site provides technical and conceptual documentation for [LUX](https://lux.
 * [Period](period.md)
 * [Activity](activity.md)
 * [Set](set.md)
+* [Supplementary Fields](extra.md)
 
 ---
 
