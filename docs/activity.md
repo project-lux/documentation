@@ -50,7 +50,7 @@ See more at:
 | Name Language | The language of the name, e.g. "English". | identified_by > Name > language |
 
 **JSON Example**
-![Name Language](assets/Activity/name-language.png)
+example pending
 
 ---
 
@@ -97,6 +97,15 @@ See more at:
 
 **JSON Example**
 ![Location](assets/Activity/location.png)
+
+### Used Specific Object
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Used Specific Object | Property that connects the Activity to the Sets of items used by that Activity. In LUX this is used primarily to connect the objects in an exhibition to their exhibition Activity. | used_specific_object |
+
+**JSON Example**
+![Used Specific Object](assets/Activity/usedspecificobject.png)
 
 ### TimeSpan
 
@@ -169,7 +178,7 @@ See more at:
 | Statement Type | Classification of the statement about the Activity, e.g. "exhibition description". | referred_to_by > classified_as |
 
 **JSON Example**
-example pending
+![Statement Classification](assets/Activity/statement-classification.png)
 
 ---
 
@@ -223,7 +232,7 @@ example pending
 | Digital Reference Format | Media type of digital object (e.g. "text/html"). | subject_of > digitally_carried_by > format |
 
 **JSON Example**
-example pending
+![Digital Reference Format](assets/Place/digitalreference-format.png)
 
 ---
 
