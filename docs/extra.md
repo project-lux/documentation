@@ -16,7 +16,7 @@ Documentation on these appear below.
 The pipeline programmatically injects the AAT equivalent for many classifications to serve as a data constant for the middle tier and front end. You may find these nested equivalents anywhere `classified_as` appears, and it will be in the `equivalent` property of the classification. 
 
 **JSON Example**
-![AAT equivalent](assets/Extra/aatequiv.png)
+![AAT equivalent](assets/Extra/aatequivs.png)
 
 ### HAL Links
 For requests for a full document (i.e., no profile specified), LUX's Middle Tier appends a set of HAL [Hypertext Application Language](https://en.wikipedia.org/wiki/Hypertext_Application_Language) links to make it easier for users/clients to identify the query needed to get data that are related to the entity.

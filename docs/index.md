@@ -5,7 +5,7 @@ This site provides technical and conceptual documentation for [LUX](https://lux.
 
 Users will notice properties repeat across Classes. This documentation takes a comprehensive view and includes every property per Class, rather that store, for example, the name documentation in one central location and review to it. Thus, each Class below contains every property currently being used in the LUX platform. 
 
-There are occasionally properties in the data that are not represented by the Linked.art model and exist to provide necessary data points for search and retrieval. Information about these can be found under Available Documentation, Supplementary Fields.
+There are occasionally properties in the data that are not represented by the Linked.art model and exist to provide necessary data points for search and retrieval. Information about these can be found under Supplementary Fields below.
 
 ## Available Documentation
 
