@@ -7,8 +7,9 @@ See more at:
 
 ### Representative Data Examples
 
-- []()
-- []()
+- [Walt Whitman Archive](https://lux.collections.yale.edu/data/set/a3f4696e-e8a2-41a4-9fd0-69354c8430bd)
+- [Vale Zines Collection](https://lux.collections.yale.edu/data/set/97b3fb68-cfd8-4133-b19b-680a25a755ab)
+- [European Art Collection, Yale University Art Gallery](https://lux.collections.yale.edu/data/set/97b3fb68-cfd8-4133-b19b-680a25a755ab)
 
  
 
@@ -18,6 +19,8 @@ See more at:
 - [Classification](#classification)
 - [Creation](#creation)
 - [Statement](#statement)
+- [Member Of](#member-of)
+- [Members Exemplified By](#members-exemplified-by)
 - [Digital Reference](#digital-reference)
 
 
@@ -53,6 +56,33 @@ See more at:
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
+| Identifier  | Numerical identifiers for the Set. | identified_by > Identifier > content |
+
+**JSON Example**
+![Identifier Content](assets/Set/ident-content.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Identifier Type | Classification of numerical identifiers. | identified_by > Identifier > classified_as   |
+
+**JSON Example**
+![Identifier Classification](assets/Set/ident-classification.png)
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Identifier Data Assignment | Used to denote the assigner of the identifier. In archival Sets, this is used to structure the hierarchy of the finding aid. | identified_by > Identifier > assigned_by > AttributeAssignment |
+
+**JSON Example**
+example pending
+
+---
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
 | Exact Match | On Sets, the equivalent property usually only holds the record of internal unit's URI that contributes to the LUX record. | equivalent |
 
 **JSON Example**
@@ -75,7 +105,7 @@ See more at:
 | Type | Classification of the Set. | classified_as |
 
 **JSON Example**
-![Classification](assets/Set/classified-as.png)
+![Classification](assets/Set/classification.png)
 
 ### Creation
 
@@ -102,7 +132,7 @@ example pending
 | Creation Event Type | Classification of the creation. | created_by > classified_as |
 
 **JSON Example**
-![Creation Classification](assets/Set/creation-classification.png)
+example pending
 
 ---
 
@@ -122,17 +152,6 @@ example pending
 **JSON Example**
 example pending
 
----
-
-| LUX Field Name | LUX Description | LUX Path |
-| -------------- | --------------- | -------- |
-| Cause of Creation Event | If an Activity with a separate record and URI is the cause of a Work's creation, this is where you can document that relationship. | created_by > caused_by |
-
-
-**JSON Example**
-![Creation Caused By](assets/Set/creation-causedby.png)
-
-
 ### Statement
 
 | LUX Field Name | LUX Description | LUX Path |
@@ -149,7 +168,7 @@ example pending
 | Statement Type | Classification of the statement about the Set. | referred_to_by > classified_as |
 
 **JSON Example**
-example pending
+![Statement Classifcation](assets/Set/statement-classification.png)
 
 ---
 
@@ -160,23 +179,42 @@ example pending
 **JSON Example**
 example pending
 
+### Member Of
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Member of Set | Other Sets this Set is a member of. | member_of |
+
+**JSON Example**
+![Member Of](assets/Set/member-of.png)
+
+### Used For
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Used for Curation | Connects the Set to a curation activity, carried out by the Group responsible for the collection | used_for |
+
+**JSON Example**
+![Used For](assets/Set/used-for.png)
+
+### Members Exemplified By
+
+| LUX Field Name | LUX Description | LUX Path |
+| -------------- | --------------- | -------- |
+| Members Exemplified By | The information about any particular member of a set might not be available, however general information might be known about the entities that are members of the set. The description of prototype member is embedded within the Set here. | members_exemplified_by |
+
+**JSON Example**
+![Members Exemplified By](assets/Set/members-exemplified-by.png)
+
 ### Digital Reference
 
-| LUX Field Name | LUX Description | LUX Path |
-| -------------- | --------------- | -------- |
-| Depicting Image |  | representation |
-
-**JSON Example**
-example pending
-
----
 
 | LUX Field Name | LUX Description | LUX Path |
 | -------------- | --------------- | -------- |
-| Digital Reference | Webpages and IIIF manifests. | subject_of > digitally_carried_by |
+| Digital Reference | Webpages and IIIF manifests. On Sets, this is usually used to direct users to the home page or Archives at Yale page for the item. | subject_of > digitally_carried_by |
 
 **JSON Example**
-![Digital Reference](assets/Place/digitalreference.png)
+![Digital Reference](assets/Set/digitalreference.png)
 
 ---
 
@@ -185,7 +223,7 @@ example pending
 | Digital Reference Type | Classification of digital reference. | subject_of > digitally_carried_by > classified_as |
 
 **JSON Example**
-![Digital Reference Classification](assets/Place/digitalreference-classification.png)
+![Digital Reference Classification](assets/Set/digitalreference-classification.png)
 
 ---
 
@@ -194,7 +232,7 @@ example pending
 | Name for Digital Reference | Label for the digital reference. | subject_of > digitally_carried_by > identified_by |
 
 **JSON Example**
-example pending
+![Digital Reference Name](assets/Set/digitalreference-name.png)
 
 ---
 
@@ -203,7 +241,7 @@ example pending
 | Digital Reference Format | Media type of digital object (e.g. "text/html"). | subject_of > digitally_carried_by > format |
 
 **JSON Example**
-example pending
+![Digital Reference Format](assets/Set/digitalreference-format.png)
 
 ---
 
@@ -212,6 +250,6 @@ example pending
 | Digital Reference Access Point | The ID field in this array is used to store the website URL. | subject_of > digitally_carried_by > access_point |
 
 **JSON Example**
-![Digital Reference Access Point](assets/Place/digitalreference-accesspoint.png)
+![Digital Reference Access Point](assets/Set/digitalreference-accesspoint.png)
 
 

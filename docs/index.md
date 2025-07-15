@@ -28,7 +28,7 @@ There are occasionally properties in the data that are not represented by the Li
 * [Linked.art](https://linked.art/)
 * [LUX pipeline codebase](https://github.com/project-lux/data-pipeline)
 * [LUX front end codebase](https://github.com/project-lux/lux-frontend)
-* [LUX Marklogic codebase](https://github.com/project-lux/lux-marklogic)
+* [LUX back end codebase](https://github.com/project-lux/lux-marklogic)
 * [LUX middle tier codebase](https://github.com/project-lux/lux-middletier)
 * [MARC-to-LinkedArt Mapping](https://github.com/timathom/marc2linkedart/blob/main/specs/md/index.md)
 
