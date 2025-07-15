@@ -24,7 +24,6 @@ See more at:
 - [Digital Reference](#digital-reference)
 
 
-
 ### Names and Identifiers
 
 | LUX Field Name | LUX Description | LUX Path |
@@ -50,7 +49,7 @@ See more at:
 | Name Language | The language of the name, e.g. "English". | identified_by > Name > language |
 
 **JSON Example**
-![Name Language](assets/Set/name-language.png)
+example pending
 
 ---
 
